@@ -1,0 +1,178 @@
+SOUTH INDIAN STARTUP ECOSYSTEM & FUNDING INTELLIGENCE DASHBOARD
+
+Project Report
+
+
+
+1. INTRODUCTION
+
+The South Indian Startup Ecosystem & Funding Intelligence Dashboard is a data analytics project developed to analyze startup funding patterns and investment activity.
+
+The project focuses on understanding funding trends across different years, cities, and startup sectors. It provides insights into total funding, number of deals, average deal size, funding concentration, year-over-year growth, and deal-size volatility.
+
+The project follows an end-to-end data analytics workflow using Python, MySQL, Excel, and Power BI.
+
+
+
+2. BUSINESS OBJECTIVE
+
+The main objective of this project is to analyze startup funding data and identify meaningful patterns that can support investment and business decisions.
+
+The analysis aims to:
+
+• Understand yearly startup funding trends.
+• Compare funding across major cities.
+• Identify sectors receiving higher funding.
+• Analyze the concentration of funding across sectors.
+• Measure year-over-year changes in funding.
+• Identify sectors with high deal-size volatility.
+• Present the findings through an interactive Power BI dashboard.
+
+
+
+3. DATASET DESCRIPTION
+
+The project uses the Indian Startup Funding dataset containing startup investment records.
+
+The original dataset contains 3,044 records and 10 columns. The data includes information such as startup name, industry vertical, subvertical, city location, investors, investment type, funding amount, date, and remarks.
+
+After data cleaning and transformation, additional fields such as year and sector category were created for analysis.
+
+The cleaned dataset was used for SQL analysis and Power BI dashboard development.
+
+
+
+4. DATA CLEANING & PREPARATION
+
+The dataset was cleaned and prepared using Python and Pandas before performing analysis.
+
+The following steps were performed:
+
+• Standardized column names for easier analysis.
+• Converted funding amounts into numeric values.
+• Converted dates into a usable date format.
+• Created a Year column from the funding date.
+• Standardized city names, including Bangalore to Bengaluru.
+• Cleaned inconsistent city names such as Gurgaon to Gurugram.
+• Standardized industry and sector names.
+• Created a Sector Category column for better sector-level analysis.
+• Checked for duplicate records.
+• Checked for negative funding values.
+• Handled missing values where appropriate.
+• Saved the cleaned dataset as startup_clean.csv.
+
+The final cleaned dataset contains 3,044 records and 12 columns.
+
+
+
+5. SQL ANALYSIS
+
+MySQL was used to perform structured analysis on the cleaned startup funding dataset.
+
+The following analyses were performed:
+
+• Yearly funding analysis
+• City-wise funding analysis
+• Sector-wise funding analysis
+• Funding concentration analysis
+• Year-over-year funding growth analysis
+• Sector deal-size volatility analysis
+
+SQL aggregation functions such as SUM(), COUNT(), AVG(), and STDDEV() were used to calculate key business metrics.
+
+The SQL results were exported to CSV files and used for further reporting and dashboard development.
+
+
+
+6. EXCEL ANALYSIS
+
+Excel was used to organize and review the SQL analysis outputs.
+
+Six analysis outputs were imported into separate Excel sheets:
+
+• Yearly Funding
+• City Funding
+• Sector Funding
+• Funding Concentration
+• YoY Growth
+• Sector Volatility
+
+Excel was used as an intermediate reporting layer to review the results before creating the final Power BI dashboard.
+
+
+
+7. POWER BI DASHBOARD
+
+Power BI was used to create an interactive dashboard from the cleaned startup funding dataset.
+
+The dashboard contains three main pages:
+
+1. Executive Overview
+
+This page provides a high-level view of:
+• Total Funding
+• Total Deals
+• Average Deal Size
+• Total Funding by Year
+• Total Funding by Sector
+
+2. City & Sector Intelligence
+
+This page analyzes:
+• Total Funding by City
+• Total Funding by Sector
+• Total Deals by City
+• Total Deals by Sector
+• Year and City slicers for interactive filtering
+
+3. Risk & Volatility Monitoring
+
+This page analyzes:
+• Funding Volatility by Sector
+• Records with Funding Amount
+• Total Funding by Trend
+• Year slicer for interactive filtering
+
+The dashboard was designed to provide a clear and interactive view of startup funding patterns.
+
+
+
+8. KEY FINDINGS
+
+The analysis produced the following key findings:
+
+• Bengaluru recorded the highest total funding among the cities analyzed.
+• Funding levels changed significantly across different years.
+• E-Commerce was one of the major sectors by total funding.
+• A large share of total funding was concentrated among a small number of sectors.
+• Average deal sizes varied significantly between sectors.
+• Transportation showed high average deal size and high deal-size volatility.
+• Funding activity in 2020 was much lower than in previous years, with only a small number of records in the dataset.
+• The results show that startup funding is concentrated in selected cities and sectors.
+
+
+
+9. BUSINESS INSIGHTS
+
+The analysis provides several useful business insights:
+
+• Investors can identify cities with stronger startup funding activity.
+• Sector-level analysis can help identify sectors attracting higher investment.
+• Funding concentration can help investors understand where investment is heavily focused.
+• Year-over-year analysis helps identify periods of funding growth and decline.
+• Deal-size volatility can indicate sectors where investment amounts vary significantly.
+• The dashboard can support data-driven comparison of startup markets and funding patterns.
+
+These insights can help investors, analysts, and policymakers understand the startup funding landscape and identify areas for further investigation.
+
+
+
+10. CONCLUSION
+
+The South Indian Startup Ecosystem & Funding Intelligence Dashboard demonstrates an end-to-end data analytics workflow using Python, MySQL, Excel, and Power BI.
+
+The project transformed raw startup funding data into a cleaned and structured dataset, performed SQL-based analysis, reviewed the results using Excel, and presented key insights through an interactive Power BI dashboard.
+
+The dashboard provides a clear view of funding trends, city and sector performance, funding concentration, year-over-year growth, and deal-size volatility.
+
+Overall, this project demonstrates practical skills in data cleaning, data analysis, SQL, Excel, Power BI, data visualization, and business insight generation.
